@@ -320,10 +320,16 @@ li span{
 
 
 /* RESPONSIVE */
-
+@media (min-width: 601px) {
+    .mobile {
+      display: none;
+    }
+  }
 
 @media only screen and (max-width: 600px){
-
+.desktop {
+    display: none;
+    }
 .nav{
     flex-direction: column;
     justify-content: space-around;
