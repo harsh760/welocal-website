@@ -6,6 +6,10 @@ html,body{
     padding: 0px !important;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     text-decoration: none !important;
 }
@@ -47,7 +51,11 @@ html,body{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
+.nav .links a:hover{
+    border-bottom: 2px #fff solid;
+    /* padding: 5px; */
+    border-radius: 2px;
+}
 .nav .links a{
     margin-right: 25px;
     font-size: 16px;
@@ -57,10 +65,18 @@ html,body{
 }
 
 .nav .links .mainlink{
+    /* border: 2px #fff solid;
+    padding: 5px;
+    border-radius: 5px; */
     /* color: #e0501b; */
     color: #092415;
 }
-
+.bg-active .nav .links .mainlink{
+    color: #fff;
+}
+.bg-active .nav .links .highlight{
+    color: #092415;
+}
 .nav h4{
     font-size: 22px;
     font-weight: bold;
@@ -116,6 +132,10 @@ html,body{
 
 
 /* ABOUT CSS */
+
+#about{
+    padding: 70px;
+}
 
 .about{
     height: 600px;
@@ -283,7 +303,7 @@ li span{
 
 .bannerText h1{
     font-size: 3vw;
-    color: #000;
+    color: #fff;
     font-weight: 600;
 }
 
